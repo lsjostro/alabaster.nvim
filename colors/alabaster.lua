@@ -89,7 +89,7 @@ if vim.o.background == "dark" then
 	local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
 	local pmenu_bg = nord.black
 	local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
-	local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = nord.black }
+	local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = nord.bright_black }
 		or {
 			bg = float_bg,
 			fg = float_bg,
