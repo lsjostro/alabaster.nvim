@@ -207,7 +207,7 @@ if vim.o.background == "dark" then
 		LspCodeLens = { fg = nord.bright_black },
 		LspCodeLensSeparator = { fg = nord.bright_black },
 
-		DiagnosticError = { fg = error },
+		DiagnosticError = { fg = nord.yellow },
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
@@ -257,7 +257,7 @@ if vim.o.background == "dark" then
 		["@conditional"] = { fg = ansi.white },
 		["@constant.builtin"] = { fg = const_fg },
 		["@constant.macro"] = { fg = ansi.white },
-		["@error"] = { bg = nord.bg, fg = mistake.fg },
+		["@error"] = { bg = mistake.bg, fg = mistake.fg },
 		["@exception"] = { fg = ansi.white },
 		["@field"] = { fg = ansi.white },
 		["@function"] = { fg = ansi.white },
