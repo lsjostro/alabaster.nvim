@@ -87,7 +87,7 @@ if vim.o.background == "dark" then
 		yellow = nord.yellow,
 	}
 	local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
-	local pmenu_bg = nord.bright_black
+	local pmenu_bg = nord.black
 	local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
 	local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = nord.black }
 		or {
@@ -115,7 +115,7 @@ if vim.o.background == "dark" then
 		SignColumn = {},
 		IncSearch = { bg = nord.yellow, fg = bg },
 		LineNr = { fg = nord.bright_black },
-		CursorLineNr = { fg = nord.bright_black, bold = 1 },
+		CursorLineNr = { fg = nord.blue, bold = 1 },
 		MatchParen = { underline = 1, sp = active },
 		MoreMsg = { fg = nord.green, bold = 1 },
 		NonText = { fg = nord.bright_black },
