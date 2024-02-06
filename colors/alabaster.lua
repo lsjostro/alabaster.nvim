@@ -115,7 +115,7 @@ if vim.o.background == "dark" then
 		SignColumn = {},
 		IncSearch = { bg = nord.yellow, fg = bg },
 		LineNr = { fg = nord.bright_black },
-		CursorLineNr = { fg = nord.blue, bold = 1 },
+		CursorLineNr = { fg = nord.bright_black, bold = 1 },
 		MatchParen = { underline = 1, sp = active },
 		MoreMsg = { fg = nord.green, bold = 1 },
 		NonText = { fg = nord.bright_black },
