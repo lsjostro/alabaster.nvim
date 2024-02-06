@@ -201,11 +201,11 @@ if vim.o.background == "dark" then
 		Todo = { bg = nord.yellow, fg = bg },
 
 		--- Diagnostic
-		LspReferenceText = { bg = "#253437" },
-		LspReferenceRead = { bg = "#253437" },
-		LspReferenceWrite = { bg = "#253437", underline = 1, sp = active },
-		LspCodeLens = { fg = "#5c5c5c" },
-		LspCodeLensSeparator = { fg = "#5c5c5c" },
+		LspReferenceText = { bg = nord.bright_black },
+		LspReferenceRead = { bg = nord.bright_black },
+		LspReferenceWrite = { bg = nord.bright_black, underline = 1, sp = active },
+		LspCodeLens = { fg = nord.bright_black },
+		LspCodeLensSeparator = { fg = nord.bright_black },
 
 		DiagnosticError = { fg = error },
 		DiagnosticWarn = { fg = warn },
@@ -348,7 +348,7 @@ if vim.o.background == "dark" then
 		AlabasterBrightYellow = { fg = ansi.brightyellow },
 		AlabasterCyan = { fg = ansi.cyan },
 		AlabasterGreen = { fg = ansi.green },
-		AlabasterDarkGreen = { fg = ansi.green },
+		AlabasterDarkGreen = { fg = ansi.red },
 		AlabasterMagenta = { fg = ansi.magenta },
 		AlabasterRed = { fg = ansi.red },
 		AlabasterWhite = { fg = ansi.white },
