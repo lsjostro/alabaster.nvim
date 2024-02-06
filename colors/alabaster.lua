@@ -55,7 +55,7 @@ if vim.o.background == "dark" then
 	-- colors
 	local bg = nord.bg
 	local fg = nord.fg
-	local punct_fg = nord.bright_black
+	local punct_fg = nord.bright_white
 	local def_fg = nord.blue
 	local const_fg = nord.magenta
 	local active = nord.yellow
@@ -180,9 +180,9 @@ if vim.o.background == "dark" then
 		-- SpecialChar = { fg = diffchange }, --  special character in a constant
 		-- Tag            { }, --    you can use CTRL-] on this
 		-- Delimiter      { },
-		SpecialComment = { bg = "#1d292b", fg = ansi.blue },
-		debugPc = { bg = "#0f2534" },
-		debugBreakpoint = { bg = "#b33229" },
+		SpecialComment = { bg = nord.bright_black, fg = ansi.blue },
+		debugPc = { bg = nord.bright_black },
+		debugBreakpoint = { bg = nord.red },
 		helpHyperTextJump = { fg = ansi.magenta },
 		helpSectionDelim = { fg = ansi.magenta },
 		helpExample = { fg = ansi.cyan },
@@ -198,24 +198,23 @@ if vim.o.background == "dark" then
 
 		Error = { bg = mistake.bg, fg = mistake.fg },
 
-		Todo = { bg = "#d0d058", fg = bg },
+		Todo = { bg = nord.yellow, fg = bg },
 
 		--- Diagnostic
-		LspReferenceText = { bg = "#253437" },
-		LspReferenceRead = { bg = "#253437" },
-		LspReferenceWrite = { bg = "#253437", underline = 1, sp = active },
-		LspCodeLens = { fg = "#5c5c5c" },
-		LspCodeLensSeparator = { fg = "#5c5c5c" },
+		LspReferenceText = { bg = nord.bright_black },
+		LspReferenceRead = { bg = nord.bright_black },
+		LspReferenceWrite = { bg = nord.bright_black, underline = 1, sp = active },
+		LspCodeLens = { fg = nord.bright_black },
+		LspCodeLensSeparator = { fg = nord.bright_black },
 
-		--- Diagnostic
 		DiagnosticError = { fg = error },
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
-		DiagnosticVirtualTextError = { bg = "#350B0B", fg = "#D1503A" },
-		DiagnosticVirtualTextWarn = { bg = "#3F240A", fg = "#C8935D" },
-		DiagnosticVirtualTextHint = { bg = "#1D2B37", fg = "#7E9CB9" },
-		DiagnosticVirtualTextInfo = { bg = "#162C0B", fg = "#7BAC62" },
+		DiagnosticVirtualTextError = { bg = nord.red, fg = nord.bright_red },
+		DiagnosticVirtualTextWarn = { bg = nord.yellow, fg = nord.bright_yellow },
+		DiagnosticVirtualTextHint = { bg = nord.blue, fg = nord.bright_blue },
+		DiagnosticVirtualTextInfo = { bg = nord.green, fg = nord.bright_green },
 
 		--- Treesitter
 		TSAttribute = {},
@@ -239,12 +238,12 @@ if vim.o.background == "dark" then
 		TSParameterReference = { fg = ansi.white },
 		TSProperty = { fg = ansi.white },
 		TSPunctDelimiter = { fg = punct_fg },
-		TSPunctBracket = { fg = "#bababa" },
+		TSPunctBracket = { fg = nord.white },
 		TSPunctSpecial = { fg = punct_fg },
 		TSRepeat = { fg = ansi.white },
 		TSString = { fg = string_fg },
-		TSStringRegex = { bg = "#1d292b", fg = const_fg },
-		TSStringEscape = { bg = "#1d292b", fg = const_fg },
+		TSStringRegex = { bg = nord.bright_black, fg = const_fg },
+		TSStringEscape = { bg = nord.bright_black, fg = const_fg },
 		TSSymbol = {},
 		TSType = { fg = ansi.white },
 		TSTypeBuiltin = { fg = ansi.white },
@@ -274,12 +273,12 @@ if vim.o.background == "dark" then
 		["@parameter.reference"] = { fg = ansi.white },
 		["@property"] = { fg = ansi.white },
 		["@punctuation.delimiter"] = { fg = punct_fg },
-		["@punctuation.bracket"] = { fg = "#bababa" },
+		["@punctuation.bracket"] = { fg = nord.white },
 		["@punctuation.special"] = { fg = punct_fg },
 		["@repeat"] = { fg = ansi.white },
 		["@string"] = { fg = string_fg },
-		["@string.regex"] = { bg = "#1d292b", fg = const_fg },
-		["@string.escape"] = { bg = "#1d292b", fg = const_fg },
+		["@string.regex"] = { bg = nord.bright_black, fg = const_fg },
+		["@string.escape"] = { bg = nord.bright_black, fg = const_fg },
 		["@symbol"] = {},
 		["@type"] = { fg = ansi.white },
 		["@type.builtin"] = { fg = ansi.white },
@@ -288,8 +287,8 @@ if vim.o.background == "dark" then
 		["@tag"] = { fg = ansi.white },
 		["@tag.delimiter"] = { fg = punct_fg },
 		["@text"] = { fg = ansi.white },
-		["@text.note"] = { bg = "#1d292b", fg = ansi.blue },
-		["@text.warning"] = { bg = "#d0d058", fg = bg },
+		["@text.note"] = { bg = nord.bright_black, fg = ansi.blue },
+		["@text.warning"] = { bg = nord.yellow, fg = nord.bg },
 
 		--- Theme specific
 		["@AlabasterConstant"] = { fg = const_fg },
@@ -302,15 +301,15 @@ if vim.o.background == "dark" then
 		GitSignsChange = { fg = diffchange },
 		GitSignsDelete = { fg = diffdelete },
 		--- Telescope
-		TelescopeBorder = { fg = "#2b3d40" },
-		TelescopeMatching = { fg = "#f09942" },
+		TelescopeBorder = { fg = nord.bright_black },
+		TelescopeMatching = { fg = "#d08770" },
 		TelescopeMultiSelection = { fg = ansi.magenta },
 		TelescopePromptPrefix = { fg = ansi.blue },
 		TelescopeSelectionCaret = { fg = mistake.fg },
 		TelescopeTitle = { fg = ansi.brightyellow },
 		TelescopeResultsTitle = { fg = ansi.yellow },
 		--- fzf-lua
-		FzfLuaBorder = { fg = "#2b3d40" },
+		FzfLuaBorder = { fg = nord.bright_black },
 		--- Neogit
 		NeogitPopupActionDisabled = { fg = darker_fg },
 		NeogitPopupActionKey = { fg = ansi.magenta },
@@ -326,8 +325,8 @@ if vim.o.background == "dark" then
 		StartifyBracket = { fg = darker_fg },
 		StartifyFile = { fg = ansi.white },
 		StartifySection = { fg = ansi.green },
-		StartifySlash = { fg = "#4e6e75" },
-		StartifyPath = { fg = "#4e6e75" },
+		StartifySlash = { fg = nord.bright_black },
+		StartifyPath = { fg = nord.bright_black },
 		--- Statusline
 		StatuslineAdd = { fg = diffadd, bg = statusline },
 		StatuslineErr = { fg = error, bg = statusline },
@@ -349,7 +348,7 @@ if vim.o.background == "dark" then
 		AlabasterBrightYellow = { fg = ansi.brightyellow },
 		AlabasterCyan = { fg = ansi.cyan },
 		AlabasterGreen = { fg = ansi.green },
-		AlabasterDarkGreen = { fg = "#6abf40" },
+		AlabasterDarkGreen = { fg = ansi.green },
 		AlabasterMagenta = { fg = ansi.magenta },
 		AlabasterRed = { fg = ansi.red },
 		AlabasterWhite = { fg = ansi.white },
@@ -357,10 +356,10 @@ if vim.o.background == "dark" then
 		--- Hop
 		HopNextKey = { fg = ansi.brightyellow },
 		HopNextKey1 = { fg = ansi.cyan },
-		HopNextKey2 = { fg = "#297567" },
-		HopUnmatched = { fg = "#3d3d3d" },
+		HopNextKey2 = { fg = ansi.cyan },
+		HopUnmatched = { fg = nord.bright_black },
 		--- Lightspeed
-		LightspeedGreyWash = { fg = "#3d3d3d" },
+		LightspeedGreyWash = { fg = nord.bright_black },
 		--- checkhealth
 		healthSuccess = { fg = ansi.green, bg = bg },
 		--- cmp
@@ -375,12 +374,12 @@ if vim.o.background == "dark" then
 		rainbowcol7 = { fg = ansi.cyan },
 		--- Iswap
 		ISwapSnipe = { bg = ansi.yellow, fg = bg },
-		ISwapGrey = { fg = "#3d3d3d" },
+		ISwapGrey = { fg = nord.bright_black },
 		--- vim-dadbod-ui
 		dbui_help = { fg = dim_comment },
 		dbui_connection_source = { fg = dim_comment },
 		--- nvim-dap-virtual-text
-		NvimDapVirtualText = { bg = "#1d292b", fg = ansi.cyan },
+		NvimDapVirtualText = { bg = nord.bright_black, fg = ansi.cyan },
 		--- Noice
 		NoiceCmdlineIcon = { link = "AlabasterDarkGreen" },
 		NoiceCmdlinePopupBorder = { link = "AlabasterDarkGreen" },
