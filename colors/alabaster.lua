@@ -201,11 +201,11 @@ if vim.o.background == "dark" then
 		Todo = { bg = nord.yellow, fg = bg },
 
 		--- Diagnostic
-		LspReferenceText = { bg = nord.bright_black },
-		LspReferenceRead = { bg = nord.bright_black },
-		LspReferenceWrite = { bg = nord.bright_black, underline = 1, sp = active },
-		LspCodeLens = { fg = nord.bright_black },
-		LspCodeLensSeparator = { fg = nord.bright_black },
+		LspReferenceText = { bg = "#253437" },
+		LspReferenceRead = { bg = "#253437" },
+		LspReferenceWrite = { bg = "#253437", underline = 1, sp = active },
+		LspCodeLens = { fg = "#5c5c5c" },
+		LspCodeLensSeparator = { fg = "#5c5c5c" },
 
 		DiagnosticError = { fg = error },
 		DiagnosticWarn = { fg = warn },
