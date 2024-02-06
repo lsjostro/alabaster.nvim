@@ -348,7 +348,7 @@ if vim.o.background == "dark" then
 		AlabasterBrightYellow = { fg = ansi.brightyellow },
 		AlabasterCyan = { fg = ansi.cyan },
 		AlabasterGreen = { fg = ansi.green },
-		AlabasterDarkGreen = { fg = ansi.red },
+		AlabasterDarkGreen = { fg = ansi.green },
 		AlabasterMagenta = { fg = ansi.magenta },
 		AlabasterRed = { fg = ansi.red },
 		AlabasterWhite = { fg = ansi.white },
