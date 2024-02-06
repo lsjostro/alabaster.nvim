@@ -108,7 +108,7 @@ if vim.o.background == "dark" then
 		DiffChange = { bg = nord.bright_yellow, fg = nord.yellow },
 		EndOfBuffer = { fg = nord.bright_black },
 		TermCursorNC = { fg = bg, bg = fg },
-		ErrorMsg = { fg = error, bg = nord.bg },
+		ErrorMsg = { fg = error, bg = bg },
 		VertSplit = { fg = nord.bright_black },
 		Folded = { bg = pmenu_bg, fg = nord.bright_black },
 		FoldColumn = { bg = bg, fg = nord.black },
