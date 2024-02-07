@@ -57,21 +57,21 @@ if vim.o.background == "dark" then
 	vim.api.nvim_set_hl(0, "NotifyERRORIcon", { fg = nord.red })
 	vim.api.nvim_set_hl(0, "NotifyERRORTitle", { fg = nord.red })
 
-	vim.api.nvim_set_hl(0, "NotifyWARNBorder", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyWARNIcon", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyWARNTitle", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyWARNBorder", { fg = nord.yellow })
+	vim.api.nvim_set_hl(0, "NotifyWARNIcon", { fg = nord.yellow })
+	vim.api.nvim_set_hl(0, "NotifyWARNTitle", { fg = nord.yellow })
 
-	vim.api.nvim_set_hl(0, "NotifyINFOBorder", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyINFOIcon", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyINFOTitle", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyINFOBorder", { fg = nord.blue })
+	vim.api.nvim_set_hl(0, "NotifyINFOIcon", { fg = nord.blue })
+	vim.api.nvim_set_hl(0, "NotifyINFOTitle", { fg = nord.blue })
 
-	vim.api.nvim_set_hl(0, "NotifyDEBUGBorder", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyDEBUGIcon", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyDEBUGTitle", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyDEBUGBorder", { fg = "#3b4252" })
+	vim.api.nvim_set_hl(0, "NotifyDEBUGIcon", { fg = "#d8dee9" })
+	vim.api.nvim_set_hl(0, "NotifyDEBUGTitle", { fg = "#d8dee9" })
 
-	vim.api.nvim_set_hl(0, "NotifyTRACEBorder", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyTRACEIcon", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyTRACETitle", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyTRACEBorder", { fg = nord.magenta })
+	vim.api.nvim_set_hl(0, "NotifyTRACEIcon", { fg = nord.magenta })
+	vim.api.nvim_set_hl(0, "NotifyTRACETitle", { fg = nord.magenta })
 
 	-- colors
 	local bg = nord.bg
