@@ -304,8 +304,8 @@ if vim.o.background == "dark" then
 		TelescopeBorder = { fg = nord.bright_black },
 		TelescopeMatching = { fg = "#d08770" },
 		TelescopeMultiSelection = { fg = ansi.magenta },
-		TelescopePromptPrefix = { fg = ansi.blue },
-		TelescopeSelectionCaret = { fg = ansi.white, bg = nord.bright_black },
+		TelescopePromptPrefix = { fg = ansi.magenta },
+		TelescopeSelectionCaret = { fg = ansi.white },
 		TelescopeTitle = { fg = ansi.brightyellow },
 		TelescopeResultsTitle = { fg = ansi.yellow },
 		--- fzf-lua
