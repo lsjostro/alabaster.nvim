@@ -73,6 +73,8 @@ if vim.o.background == "dark" then
 	vim.api.nvim_set_hl(0, "NotifyTRACEIcon", { fg = "#ffffff" })
 	vim.api.nvim_set_hl(0, "NotifyTRACETitle", { fg = "#ffffff" })
 
+	vim.api.nvim_set_hl(0, "IblScope", { fg = "#123455" })
+
 	-- colors
 	local bg = nord.bg
 	local fg = nord.fg
