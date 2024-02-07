@@ -402,7 +402,7 @@ if vim.o.background == "dark" then
 		--- nvim-dap-virtual-text
 		NvimDapVirtualText = { bg = nord.bright_black, fg = ansi.cyan },
 		--- Noice
-		NoiceCmdlineIcon = { link = "AlabasterDarkGreen" },
+		NoiceCmdlineIcon = { link = "AlabasterBlue" },
 		NoiceCmdlinePopupBorder = { link = "AlabasterDarkGreen" },
 		NoiceConfirmBorder = { link = "AlabasterDarkGreen" },
 		NoiceCmdlinePopupBorderCmdline = { link = "AlabasterDarkGreen" },
@@ -411,8 +411,8 @@ if vim.o.background == "dark" then
 		NoiceCmdlineIconFilter = { link = "AlabasterDarkGreen" },
 		NoiceCmdlinePopupBorderLua = { link = "AlabasterDarkGreen" },
 		NoiceCmdlineIconLua = { link = "AlabasterDarkGreen" },
-		NoiceCmdlinePopupBorderSearch = { link = "AlabasterBlue" },
-		NoiceCmdlineIconSearch = { link = "AlabasterBlue" },
+		NoiceCmdlinePopupBorderSearch = { link = "AlabasterYellow" },
+		NoiceCmdlineIconSearch = { link = "AlabasterYellow" },
 		-- Languages
 		--- asm
 		asmDirective = { fg = dim_comment },
