@@ -22,7 +22,7 @@ if vim.o.background == "dark" then
 		bright_red = "#BF616A",
 		green = "#A3BE8C",
 		bright_green = "#A3BE8C",
-		yellow = "#EBCB8B",
+		yellow = "#ffffff",
 		bright_yellow = "#EBCB8B",
 		blue = "#81A1C1",
 		bright_blue = "#81A1C1",
