@@ -105,7 +105,7 @@ if vim.o.background == "dark" then
 		DiffAdd = { bg = nord.bright_green, fg = nord.green },
 		DiffDelete = { bg = nord.bright_red, fg = nord.red },
 		DiffText = { fg = nord.bright_yellow, bg = nord.yellow },
-		DiffChange = { bg = nord.bright_yellow, fg = nord.yellow }
+		DiffChange = { bg = nord.bright_yellow, fg = nord.yellow },
 		EndOfBuffer = { fg = nord.bright_black },
 		TermCursorNC = { fg = bg, bg = fg },
 		ErrorMsg = { fg = error, bg = mistake.bg },
