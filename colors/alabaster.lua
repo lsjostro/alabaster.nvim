@@ -52,6 +52,8 @@ if vim.o.background == "dark" then
 	vim.g.terminal_color_14 = nord.bright_cyan
 	vim.g.terminal_color_15 = nord.bright_white
 
+	vim.api.nvim_set_hl(0, "NotifyERRORBorder", { fg = "#ffffff" })
+
 	-- colors
 	local bg = nord.bg
 	local fg = nord.fg
