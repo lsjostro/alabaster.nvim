@@ -402,7 +402,8 @@ if vim.o.background == "dark" then
 		--- nvim-dap-virtual-text
 		NvimDapVirtualText = { bg = nord.bright_black, fg = ansi.cyan },
 		--- Noice
-		NoiceCmdlineIcon = { fg = nord.blue },
+		NoiceCmdlinePopup = { link = "AlabasterBlue" },
+		NoiceCmdlineIcon = { link = "AlabasterDarkGreen" },
 		NoiceCmdlinePopupBorder = { link = "AlabasterDarkGreen" },
 		NoiceConfirmBorder = { link = "AlabasterDarkGreen" },
 		NoiceCmdlinePopupBorderCmdline = { link = "AlabasterDarkGreen" },
