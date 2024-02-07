@@ -53,7 +53,25 @@ if vim.o.background == "dark" then
 	vim.g.terminal_color_15 = nord.bright_white
 
 	-- Overide noice highlight groups
+	vim.api.nvim_set_hl(0, "NotifyERRORBorder", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyERRORIcon", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyERRORTitle", { fg = "#ffffff" })
+
 	vim.api.nvim_set_hl(0, "NotifyWARNBorder", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyWARNIcon", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyWARNTitle", { fg = "#ffffff" })
+
+	vim.api.nvim_set_hl(0, "NotifyINFOBorder", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyINFOIcon", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyINFOTitle", { fg = "#ffffff" })
+
+	vim.api.nvim_set_hl(0, "NotifyDEBUGBorder", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyDEBUGIcon", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyDEBUGTitle", { fg = "#ffffff" })
+
+	vim.api.nvim_set_hl(0, "NotifyTRACEBorder", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyTRACEIcon", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyTRACETitle", { fg = "#ffffff" })
 
 	-- colors
 	local bg = nord.bg
@@ -108,7 +126,7 @@ if vim.o.background == "dark" then
 		DiffAdd = { bg = nord.bright_green, fg = nord.green },
 		DiffDelete = { bg = nord.bright_red, fg = nord.red },
 		DiffText = { fg = nord.bright_yellow, bg = nord.yellow },
-		DiffChange = { bg = nord.bright_yellow, fg = nord.yellow },
+		DiffChange = { bg = "NONE", fg = nord.yellow },
 		EndOfBuffer = { fg = nord.bright_black },
 		TermCursorNC = { fg = bg, bg = fg },
 		ErrorMsg = { fg = error, bg = mistake.bg },
