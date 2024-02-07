@@ -52,6 +52,7 @@ if vim.o.background == "dark" then
 	vim.g.terminal_color_14 = nord.bright_cyan
 	vim.g.terminal_color_15 = nord.bright_white
 
+	-- Overide noice highlight groups
 	vim.api.nvim_set_hl(0, "NotifyWARNBorder", { fg = "#ffffff" })
 
 	-- colors
@@ -68,7 +69,7 @@ if vim.o.background == "dark" then
 	local diffchange = nord.yellow
 	local statusline = nord.bright_black
 	local comment = nord.bright_yellow
-	local dim_comment = nord.bright_black
+	local dim_comment = "#616E88"
 	local mistake = {
 		fg = nord.red,
 		bg = nord.bg,
