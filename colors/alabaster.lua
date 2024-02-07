@@ -411,7 +411,7 @@ if vim.o.background == "dark" then
 		NoiceCmdlineIconFilter = { link = "AlabasterDarkGreen" },
 		NoiceCmdlinePopupBorderLua = { link = "AlabasterDarkGreen" },
 		NoiceCmdlineIconLua = { link = "AlabasterDarkGreen" },
-		NoiceCmdlinePopupBorderSearch = { link = "AlabasterYellow" },
+		NoiceCmdlinePopupBorderSearch = { link = "AlabasterBlue" },
 		NoiceCmdlineIconSearch = { link = "AlabasterBlue" },
 		-- Languages
 		--- asm
