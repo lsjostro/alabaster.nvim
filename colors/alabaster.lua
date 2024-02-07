@@ -53,9 +53,9 @@ if vim.o.background == "dark" then
 	vim.g.terminal_color_15 = nord.bright_white
 
 	-- Overide noice highlight groups
-	vim.api.nvim_set_hl(0, "NotifyERRORBorder", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyERRORIcon", { fg = "#ffffff" })
-	vim.api.nvim_set_hl(0, "NotifyERRORTitle", { fg = "#ffffff" })
+	vim.api.nvim_set_hl(0, "NotifyERRORBorder", { fg = "#D9B0B5" })
+	vim.api.nvim_set_hl(0, "NotifyERRORIcon", { fg = nord.red })
+	vim.api.nvim_set_hl(0, "NotifyERRORTitle", { fg = nord.red })
 
 	vim.api.nvim_set_hl(0, "NotifyWARNBorder", { fg = "#ffffff" })
 	vim.api.nvim_set_hl(0, "NotifyWARNIcon", { fg = "#ffffff" })
