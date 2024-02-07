@@ -201,17 +201,17 @@ if vim.o.background == "dark" then
 		Todo = { bg = nord.yellow, fg = bg },
 
 		--- Diagnostic
-		LspReferenceText = { bg = nord.bright_black },
-		LspReferenceRead = { bg = nord.bright_black },
+		LspReferenceText = { bg = nord.black },
+		LspReferenceRead = { bg = nord.black },
 		LspReferenceWrite = { bg = nord.bright_black, underline = 1, sp = active },
-		LspCodeLens = { fg = nord.bright_black },
-		LspCodeLensSeparator = { fg = nord.bright_black },
+		LspCodeLens = { fg = nord.black },
+		LspCodeLensSeparator = { fg = nord.black },
 
 		DiagnosticError = { fg = error },
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
-		DiagnosticVirtualTextError = { bg = "NONE", fg = nord.bright_red },
+		DiagnosticVirtualTextError = { bg = "#BF616A1A", fg = nord.bright_red },
 		DiagnosticVirtualTextWarn = { bg = nord.yellow, fg = nord.bright_yellow },
 		DiagnosticVirtualTextHint = { bg = nord.blue, fg = nord.bright_blue },
 		DiagnosticVirtualTextInfo = { bg = nord.green, fg = nord.bright_green },
