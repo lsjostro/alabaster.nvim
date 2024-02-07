@@ -22,7 +22,7 @@ if vim.o.background == "dark" then
 		bright_red = "#BF616A",
 		green = "#A3BE8C",
 		bright_green = "#A3BE8C",
-		yellow = "#ffffff",
+		yellow = "#EBCB8B",
 		bright_yellow = "#EBCB8B",
 		blue = "#81A1C1",
 		bright_blue = "#81A1C1",
@@ -196,7 +196,7 @@ if vim.o.background == "dark" then
 		Structure = { fg = def_fg },
 		Typedef = { fg = def_fg },
 
-		Special = { fg = ansi.yellow },
+		Special = { fg = ansi.white },
 		-- TODO better color than diffchange, try reddish
 		-- SpecialChar = { fg = diffchange }, --  special character in a constant
 		-- Tag            { }, --    you can use CTRL-] on this
