@@ -211,7 +211,7 @@ if vim.o.background == "dark" then
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
-		DiagnosticVirtualTextError = { bg = "#BF616A1A", fg = nord.bright_red },
+		DiagnosticVirtualTextError = { bg = "NONE", fg = nord.bright_red },
 		DiagnosticVirtualTextWarn = { bg = nord.yellow, fg = nord.bright_yellow },
 		DiagnosticVirtualTextHint = { bg = nord.blue, fg = nord.bright_blue },
 		DiagnosticVirtualTextInfo = { bg = nord.green, fg = nord.bright_green },
