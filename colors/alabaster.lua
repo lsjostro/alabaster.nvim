@@ -79,7 +79,7 @@ if vim.o.background == "dark" then
 	local punct_fg = nord.bright_white
 	local def_fg = nord.blue
 	local const_fg = nord.magenta
-	local active = nord.blue
+	local active = nord.yellow
 	local string_fg = nord.green
 	local darker_fg = nord.bright_black
 	local diffadd = nord.green
