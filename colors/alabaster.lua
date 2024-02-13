@@ -140,7 +140,7 @@ if vim.o.background == "dark" then
 		MatchParen = { underline = 1, sp = active },
 		MoreMsg = { fg = nord.green, bold = 1 },
 		NonText = { fg = nord.bright_black },
-		Normal = { bg = "#000000", fg = fg },
+		Normal = { bg = bg, fg = fg },
 		NormalFloat = { bg = float_bg },
 		FloatBorder = floatborder,
 		Pmenu = { bg = pmenu_bg },
