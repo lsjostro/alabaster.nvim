@@ -74,7 +74,8 @@ if vim.o.background == "dark" then
 	vim.api.nvim_set_hl(0, "NotifyTRACETitle", { fg = nord.magenta })
 
 	-- colors
-	local bg = nord.bg
+	-- local bg = nord.bg
+	local bg = "#1f232b"
 	local fg = nord.fg
 	local punct_fg = nord.bright_white
 	local def_fg = nord.blue
