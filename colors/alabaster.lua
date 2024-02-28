@@ -323,7 +323,7 @@ if vim.o.background == "dark" then
 		GitSignsChange = { fg = diffchange },
 		GitSignsDelete = { fg = diffdelete },
 		--- Telescope
-		TelescopeBorder = { fg = nord.bright_black },
+		TelescopeBorder = { fg = nord.white },
 		TelescopeMatching = { fg = "#d08770" },
 		TelescopeMultiSelection = { fg = ansi.magenta },
 		TelescopePromptPrefix = { fg = ansi.blue },
@@ -331,7 +331,7 @@ if vim.o.background == "dark" then
 		TelescopeTitle = { fg = ansi.brightyellow },
 		TelescopeResultsTitle = { fg = ansi.yellow },
 		--- fzf-lua
-		FzfLuaBorder = { fg = nord.bright_black },
+		FzfLuaBorder = { fg = nord.white },
 		--- Neogit
 		NeogitPopupActionDisabled = { fg = darker_fg },
 		NeogitPopupActionKey = { fg = ansi.magenta },
