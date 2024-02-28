@@ -229,7 +229,6 @@ if vim.o.background == "dark" then
 		LspCodeLens = { fg = nord.black },
 		LspCodeLensSeparator = { fg = nord.black },
 
-		DiagnosticBorder = { fg = nord.bright_black },
 		DiagnosticError = { fg = error },
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
