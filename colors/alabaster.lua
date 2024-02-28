@@ -111,7 +111,7 @@ if vim.o.background == "dark" then
 	local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
 	local pmenu_bg = nord.black
 	local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
-	local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = nord.white }
+	local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = nord.black }
 		or {
 			bg = float_bg,
 			fg = float_bg,
@@ -323,7 +323,7 @@ if vim.o.background == "dark" then
 		GitSignsChange = { fg = diffchange },
 		GitSignsDelete = { fg = diffdelete },
 		--- Telescope
-		TelescopeBorder = { fg = nord.white },
+		TelescopeBorder = { fg = nord.black },
 		TelescopeMatching = { fg = "#d08770" },
 		TelescopeMultiSelection = { fg = ansi.magenta },
 		TelescopePromptPrefix = { fg = ansi.blue },
@@ -331,7 +331,7 @@ if vim.o.background == "dark" then
 		TelescopeTitle = { fg = ansi.brightyellow },
 		TelescopeResultsTitle = { fg = ansi.yellow },
 		--- fzf-lua
-		FzfLuaBorder = { fg = nord.white },
+		FzfLuaBorder = { fg = nord.black },
 		--- Neogit
 		NeogitPopupActionDisabled = { fg = darker_fg },
 		NeogitPopupActionKey = { fg = ansi.magenta },
