@@ -117,7 +117,7 @@ if vim.o.background == "dark" then
 			fg = float_bg,
 		}
 	theme = {
-		Comment = { fg = comment_fg },
+		Comment = { fg = comment_fg, italic = true },
 		ColorColumn = { bg = nord.selection_bg },
 		Conceal = { fg = nord.bright_black },
 		Cursor = { bg = active, fg = nord.black },
@@ -136,9 +136,9 @@ if vim.o.background == "dark" then
 		FoldColumn = { bg = bg, fg = nord.black },
 		SignColumn = {},
 		IncSearch = { bg = nord.yellow, fg = bg },
-		LineNr = { fg = nord.bright_black },
-		CursorLineNr = { fg = nord.blue, bold = 1 },
-		MatchParen = { underline = 1, sp = active },
+		LineNr = { fg = nord.bright_black, italic = true },
+		CursorLineNr = { fg = nord.blue, italic = true },
+		MatchParen = { undercurl = 1, sp = active },
 		MoreMsg = { fg = nord.green, bold = 1 },
 		NonText = { fg = nord.bright_black },
 		Normal = { bg = bg, fg = fg },
@@ -225,7 +225,7 @@ if vim.o.background == "dark" then
 		--- Diagnostic
 		LspReferenceText = { bg = nord.black },
 		LspReferenceRead = { bg = nord.black },
-		LspReferenceWrite = { bg = nord.bright_black, underline = 1, sp = active },
+		LspReferenceWrite = { bg = nord.bright_black, undercurl = 1, sp = active },
 		LspCodeLens = { fg = nord.black },
 		LspCodeLensSeparator = { fg = nord.black },
 
@@ -233,10 +233,10 @@ if vim.o.background == "dark" then
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
-		DiagnosticVirtualTextError = { bg = "NONE", fg = nord.bright_red },
-		DiagnosticVirtualTextWarn = { bg = "NONE", fg = nord.bright_yellow },
-		DiagnosticVirtualTextHint = { bg = "NONE", fg = nord.bright_blue },
-		DiagnosticVirtualTextInfo = { bg = "NONE", fg = nord.bright_green },
+		DiagnosticVirtualTextError = { bg = "NONE", fg = nord.bright_red, italic = true, undercurl = true, bold = true },
+		DiagnosticVirtualTextWarn = { bg = "NONE", fg = nord.bright_yellow, italic = true, undercurl = true },
+		DiagnosticVirtualTextHint = { bg = "NONE", fg = nord.bright_blue, italic = true, undercurl = true },
+		DiagnosticVirtualTextInfo = { bg = "NONE", fg = nord.bright_green, italic = true, undercurl = true },
 
 		--- Treesitter
 		TSAttribute = {},
@@ -274,13 +274,14 @@ if vim.o.background == "dark" then
 		TSTag = { fg = ansi.white },
 		TSTagDelimiter = { fg = punct_fg },
 		TSText = { fg = ansi.white },
+		["@module"] = { fg = ansi.white, italic = true },
 		["@attribute"] = {},
 		["@constructor"] = { fg = ansi.white },
 		["@conditional"] = { fg = ansi.white },
-		["@constant.builtin"] = { fg = const_fg },
-		["@constant.macro"] = { fg = ansi.white },
-		["@error"] = { bg = mistake.bg, fg = mistake.fg },
-		["@exception"] = { fg = ansi.white },
+		["@constant.builtin"] = { fg = const_fg, italic = true },
+		["@constant.macro"] = { fg = ansi.white, italic = true },
+		["@error"] = { bg = mistake.bg, fg = mistake.fg, undercurl = true },
+		["@exception"] = { fg = ansi.white, underline = true },
 		["@field"] = { fg = ansi.white },
 		["@function"] = { fg = ansi.white },
 		["@function.builtin"] = { fg = ansi.white },
@@ -288,9 +289,9 @@ if vim.o.background == "dark" then
 		["@keyword"] = { fg = ansi.white },
 		["@keyword.function"] = { fg = ansi.white },
 		["@label"] = { fg = ansi.white },
-		["@method"] = { fg = ansi.white },
-		["@namespace"] = { fg = ansi.white },
-		["@none"] = { fg = const_fg },
+		["@method"] = { fg = ansi.white, italic = true },
+		["@namespace"] = { fg = ansi.white, italic = true },
+		["@none"] = { fg = const_fg, italic = true },
 		["@parameter"] = { fg = ansi.white },
 		["@parameter.reference"] = { fg = ansi.white },
 		["@property"] = { fg = ansi.white },
@@ -298,12 +299,13 @@ if vim.o.background == "dark" then
 		["@punctuation.bracket"] = { fg = nord.white },
 		["@punctuation.special"] = { fg = punct_fg },
 		["@repeat"] = { fg = ansi.white },
-		["@string"] = { fg = string_fg },
+		["@string"] = { fg = string_fg, italic = true },
 		["@string.regex"] = { bg = nord.bright_black, fg = const_fg },
 		["@string.escape"] = { bg = nord.bright_black, fg = const_fg },
 		["@symbol"] = {},
-		["@type"] = { fg = ansi.white },
-		["@type.builtin"] = { fg = ansi.white },
+		["@type"] = { fg = ansi.white, italic = true },
+		["@type.builtin"] = { fg = ansi.white, italic = true },
+		["@type.qualifier"] = { fg = ansi.white, italic = true },
 		["@variable"] = { fg = ansi.white },
 		["@variable.builtin"] = { fg = ansi.white },
 		["@tag"] = { fg = ansi.white },
@@ -453,7 +455,7 @@ else
 	local diffdelete = "#B40600"
 	local diffchange = "#ec8013"
 	local statusline = "#c9c9c9"
-	local comment = "#aa3731"
+	local comment = "#aa3732"
 	local dim_comment = "#696969"
 	local mistake = {
 		fg = "#c33c33",
@@ -483,7 +485,7 @@ else
 			fg = float_bg,
 		}
 	theme = {
-		Comment = { fg = comment_fg },
+		Comment = { fg = comment_fg, italic = true },
 		ColorColumn = { bg = "#E2EEEE" },
 		Conceal = { fg = "#b0b0b0" },
 		Cursor = { bg = "#007acc", fg = "#bfdbfe" },
@@ -506,9 +508,9 @@ else
 		SignColumn = {},
 		IncSearch = { bg = active, fg = fg },
 		-- Substitute   { }, -- |:substitute| replacement text highlighting
-		LineNr = { fg = "#7d7c7c" },
-		CursorLineNr = { fg = ansi.blue, bold = 1 },
-		MatchParen = { underline = 1, sp = active },
+		LineNr = { fg = "#7d7c7c", italic = true },
+		CursorLineNr = { fg = ansi.blue, italic = true },
+		MatchParen = { undercurl = 1, sp = active },
 		-- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		-- MsgArea      { }, -- Area for messages and cmdline
 		-- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -599,7 +601,7 @@ else
 		--- Diagnostic
 		LspReferenceText = { bg = "#dadada" },
 		LspReferenceRdad = { bg = "#dadada" },
-		LspReferenceWrite = { bg = "#dadada", underline = 1, sp = active_blue },
+		LspReferenceWrite = { bg = "#dadada", undercurl = 1, sp = active_blue },
 		LspCodeLens = { fg = "#999999" },
 		LspCodeLensSeparator = { fg = "#999999" },
 
@@ -608,10 +610,10 @@ else
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
-		DiagnosticVirtualTextError = { bg = "#F8B28F", fg = "#411414" },
-		DiagnosticVirtualTextWarn = { bg = "#fff987", fg = fg },
-		DiagnosticVirtualTextHint = { fg = "#0F171D", bg = "#C3D0DA" },
-		DiagnosticVirtualTextInfo = { bg = "#ADFFB7", fg = "#042F09" },
+		DiagnosticVirtualTextError = { fg = ansi.red, italic = true, bold = true, undercurl = true },
+		DiagnosticVirtualTextWarn = { fg = fg, italic = true, undercurl = true },
+		DiagnosticVirtualTextHint = { fg = ansi.blue, italic = true, undercurl = true },
+		DiagnosticVirtualTextInfo = { fg = ansi.green, italic = true, undercurl = true },
 
 		--- Treesitter
 		TSAttribute = {},
@@ -650,11 +652,12 @@ else
 		TSTagDelimiter = { fg = punct_fg },
 		TSText = { fg = ansi.black },
 
+		["@module"] = { fg = ansi.blue, italic = true },
 		["@attribute"] = {},
 		["@constructor"] = { fg = ansi.black },
 		["@conditional"] = { fg = ansi.black },
-		["@constant.builtin"] = { fg = const_fg },
-		["@constant.macro"] = { fg = ansi.black },
+		["@constant.builtin"] = { fg = const_fg, italic = true },
+		["@constant.macro"] = { fg = ansi.black, italic = true },
 		["@error"] = { bg = mistake.bg, fg = mistake.fg },
 		["@exception"] = { fg = ansi.black },
 		["@field"] = { fg = ansi.black },
@@ -664,9 +667,9 @@ else
 		["@keyword"] = { fg = ansi.black },
 		["@keyword.function"] = { fg = ansi.black },
 		["@label"] = { fg = ansi.black },
-		["@method"] = { fg = ansi.black },
-		["@namespace"] = { fg = ansi.black },
-		["@none"] = { fg = const_fg },
+		["@method"] = { fg = ansi.black, italic = true },
+		["@namespace"] = { fg = ansi.black, italic = true },
+		["@none"] = { fg = const_fg, italic = true },
 		["@parameter"] = { fg = ansi.black },
 		["@parameter.reference"] = { fg = ansi.black },
 		["@property"] = { fg = ansi.black },
@@ -674,12 +677,13 @@ else
 		["@punctuation.bracket"] = { fg = punct_fg },
 		["@punctuation.special"] = { fg = punct_fg },
 		["@repeat"] = { fg = ansi.black },
-		["@string"] = { fg = string_fg },
+		["@string"] = { fg = string_fg, italic = true },
 		["@string.regex"] = { bg = bg, fg = "#777777" },
 		["@string.escape"] = { bg = bg, fg = "#777777" },
 		["@symbol"] = {},
-		["@type"] = { fg = ansi.black },
-		["@type.builtin"] = { fg = ansi.black },
+		["@type"] = { fg = ansi.black, italic = true },
+		["@type.builtin"] = { fg = ansi.black, italic = true },
+		["@type.qualifier"] = { fg = ansi.black, italic = true },
 		["@variable"] = { fg = ansi.black },
 		["@variable.builtin"] = { fg = ansi.black },
 		["@tag"] = { fg = ansi.black },
