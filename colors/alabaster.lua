@@ -19,9 +19,9 @@ if vim.o.background == "dark" then
 		black = "#3B4252",
 		bright_black = "#4C566A",
 		red = "#BF616A",
-		bright_red = "#BF616A",
+		bright_red = "#872C28",
 		green = "#A3BE8C",
-		bright_green = "#A3BE8C",
+		bright_green = "#0A7816",
 		yellow = "#EBCB8B",
 		bright_yellow = "#EBCB8B",
 		blue = "#81A1C1",
@@ -699,7 +699,7 @@ else
 		["@AlabasterString"] = { fg = string_fg },
 		["@AlabasterHashbang"] = { fg = dim_comment },
 		--- Gitsigns
-		GitSignsAdd = { fg = "#6abf40" },
+		GitSignsAdd = { fg = diffadd },
 		GitSignsChange = { fg = diffchange },
 		GitSignsDelete = { fg = diffdelete },
 		--- Telescope
