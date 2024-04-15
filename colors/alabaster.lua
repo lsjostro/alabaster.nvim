@@ -342,6 +342,8 @@ if vim.o.background == "dark" then
 		NeogitPopupSwitchDisabled = { fg = darker_fg },
 		NeogitPopupSwitchEnabled = { fg = ansi.cyan },
 		NeogitPopupSwitchKey = { fg = ansi.magenta },
+		--- Neocodeium
+		NeoCodeiumSuggestion = { link = "Comment" },
 		--- Fugitive
 		diffAdded = { link = "DiffAdd" },
 		diffRemoved = { link = "DiffDelete" },
@@ -720,6 +722,8 @@ else
 		NeogitPopupSwitchDisabled = { fg = darker_fg },
 		NeogitPopupSwitchEnabled = { fg = ansi.cyan },
 		NeogitPopupSwitchKey = { fg = ansi.magenta },
+		--- Neocodeium
+		NeoCodeiumSuggestion = { link = "Comment" },
 		--- Fugitive
 		diffAdded = { link = "DiffAdd" },
 		diffRemoved = { link = "DiffDelete" },
